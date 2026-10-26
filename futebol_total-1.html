@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Futebol Total</title>
+<style>
+*{box-sizing:border-box}body{margin:0;font-family:Arial,Helvetica,sans-serif;background:#07110d;color:#f5fff8}
+header{background:#0c1f17;padding:18px 6%;display:flex;align-items:center;justify-content:space-between;position:sticky;top:0;z-index:5;border-bottom:1px solid #214735}
+.logo{font-size:26px;font-weight:800}.logo span{color:#55e88a}
+nav a{color:#d9f5e3;text-decoration:none;margin-left:20px;font-weight:600}
+.hero{padding:65px 6%;background:linear-gradient(135deg,#0c2d1d,#07110d);display:grid;grid-template-columns:1.5fr 1fr;gap:30px;align-items:center}
+.hero h1{font-size:54px;margin:0 0 15px}.hero p{color:#b7d5c2;font-size:18px;line-height:1.6}
+.btn{display:inline-block;background:#55e88a;color:#062111;padding:13px 20px;border-radius:10px;text-decoration:none;font-weight:800;margin-top:12px}
+.ball{font-size:130px;text-align:center}
+section{padding:40px 6%}.title{display:flex;justify-content:space-between;align-items:center;margin-bottom:20px}.title h2{margin:0}
+.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}.card{background:#0d2118;border:1px solid #204431;border-radius:16px;padding:20px;box-shadow:0 8px 25px #0003}
+.card h3{margin:8px 0}.muted{color:#9db9a7}.tag{font-size:12px;color:#55e88a;font-weight:800;text-transform:uppercase}
+.matches{display:grid;grid-template-columns:repeat(3,1fr);gap:15px}.match{background:#10291d;border-radius:14px;padding:18px;text-align:center;border:1px solid #234b35}
+.teams{display:flex;justify-content:space-around;align-items:center;font-weight:800}.score{font-size:24px;margin:10px}
+table{width:100%;border-collapse:collapse;background:#0d2118;border-radius:14px;overflow:hidden}th,td{padding:14px;text-align:left;border-bottom:1px solid #204431}th{color:#55e88a}
+.player{display:flex;align-items:center;gap:15px}.avatar{width:55px;height:55px;border-radius:50%;background:#173d29;display:grid;place-items:center;font-size:25px}
+footer{text-align:center;padding:30px;background:#050c08;color:#91a99a;margin-top:30px}
+@media(max-width:800px){nav{display:none}.hero{grid-template-columns:1fr}.hero h1{font-size:40px}.ball{font-size:90px}.grid,.matches{grid-template-columns:1fr}section{padding:30px 5%}}
+</style>
+</head>
+<body>
+<header>
+  <div class="logo">⚽ Futebol <span>Total</span></div>
+  <nav><a href="#noticias">Notícias</a><a href="#jogos">Jogos</a><a href="#ranking">Ranking</a><a href="#times">Times</a></nav>
+</header>
+
+<main>
+<section class="hero">
+  <div>
+    <div class="tag">O mundo da bola em um só lugar</div>
+    <h1>Futebol Total</h1>
+    <p>Notícias, jogos, craques, campeonatos, rankings e tudo o que você precisa saber sobre futebol.</p>
+    <a class="btn" href="#noticias">Explorar o site</a>
+  </div>
+  <div class="ball">⚽</div>
+</section>
+
+<section id="noticias">
+<div class="title"><h2>🔥 Destaques</h2><span class="muted">Atualizações do futebol</span></div>
+<div class="grid">
+<div class="card"><div class="tag">Mundial</div><h3>As maiores seleções da história</h3><p class="muted">Compare títulos, craques e campanhas das grandes seleções.</p></div>
+<div class="card"><div class="tag">Brasil</div><h3>Futebol brasileiro</h3><p class="muted">Confira os principais clubes, competições e jogadores do Brasil.</p></div>
+<div class="card"><div class="tag">Craques</div><h3>Os gigantes da bola</h3><p class="muted">Pelé, Messi, Cristiano Ronaldo e outras lendas que marcaram época.</p></div>
+</div>
+</section>
+
+<section id="jogos">
+<div class="title"><h2>📅 Jogos em destaque</h2></div>
+<div class="matches">
+<div class="match"><div class="muted">Champions League</div><div class="teams"><span>Real Madrid</span><b>⚽</b><span>Barcelona</span></div><div class="score">VS</div><small>Próximo jogo</small></div>
+<div class="match"><div class="muted">Brasileirão</div><div class="teams"><span>Flamengo</span><b>⚽</b><span>Palmeiras</span></div><div class="score">VS</div><small>Próximo jogo</small></div>
+<div class="match"><div class="muted">Premier League</div><div class="teams"><span>Liverpool</span><b>⚽</b><span>Arsenal</span></div><div class="score">VS</div><small>Próximo jogo</small></div>
+</div>
+</section>
+
+<section id="ranking">
+<div class="title"><h2>🏆 Ranking de seleções por títulos de Copa</h2></div>
+<table><thead><tr><th>#</th><th>Seleção</th><th>Títulos</th></tr></thead>
+<tbody><tr><td>1</td><td>🇧🇷 Brasil</td><td>5</td></tr><tr><td>2</td><td>🇩🇪 Alemanha</td><td>4</td></tr><tr><td>3</td><td>🇮🇹 Itália</td><td>4</td></tr><tr><td>4</td><td>🇦🇷 Argentina</td><td>3</td></tr><tr><td>5</td><td>🇫🇷 França</td><td>2</td></tr><tr><td>6</td><td>🇺🇾 Uruguai</td><td>2</td></tr></tbody></table>
+</section>
+
+<section id="times">
+<div class="title"><h2>🌎 Seleções</h2><span class="muted">Principais seleções do mundo</span></div>
+<div class="grid">
+<div class="card"><h3>🇧🇷 Brasil</h3><p class="muted">América do Sul • 5 Copas</p></div>
+<div class="card"><h3>🇦🇷 Argentina</h3><p class="muted">América do Sul • 3 Copas</p></div>
+<div class="card"><h3>🇫🇷 França</h3><p class="muted">Europa • 2 Copas</p></div>
+<div class="card"><h3>🇩🇪 Alemanha</h3><p class="muted">Europa • 4 Copas</p></div>
+<div class="card"><h3>🇪🇸 Espanha</h3><p class="muted">Europa • 1 Copa</p></div>
+<div class="card"><h3>🇮🇹 Itália</h3><p class="muted">Europa • 4 Copas</p></div>
+<div class="card"><h3>🇵🇹 Portugal</h3><p class="muted">Europa • Seleção histórica</p></div>
+<div class="card"><h3>🏴 Inglaterra</h3><p class="muted">Europa • 1 Copa</p></div>
+<div class="card"><h3>🇺🇾 Uruguai</h3><p class="muted">América do Sul • 2 Copas</p></div>
+<div class="card"><h3>🇳🇱 Holanda</h3><p class="muted">Europa • 3 finais de Copa</p></div>
+<div class="card"><h3>🇯🇵 Japão</h3><p class="muted">Ásia • Seleção em crescimento</p></div>
+<div class="card"><h3>🇲🇦 Marrocos</h3><p class="muted">África • Destaque mundial</p></div>
+</div>
+
+<div class="title" style="margin-top:40px"><h2>🏟️ Grandes clubes</h2><span class="muted">Clubes famosos do futebol mundial</span></div>
+<div class="grid">
+<div class="card"><h3>🇪🇸 Real Madrid</h3><p class="muted">Espanha • Champions League</p></div>
+<div class="card"><h3>🇪🇸 Barcelona</h3><p class="muted">Espanha • La Liga</p></div>
+<div class="card"><h3>🏴 Liverpool</h3><p class="muted">Inglaterra • Premier League</p></div>
+<div class="card"><h3>🏴 Manchester City</h3><p class="muted">Inglaterra • Premier League</p></div>
+<div class="card"><h3>🇩🇪 Bayern de Munique</h3><p class="muted">Alemanha • Bundesliga</p></div>
+<div class="card"><h3>🇫🇷 PSG</h3><p class="muted">França • Ligue 1</p></div>
+<div class="card"><h3>🇮🇹 Juventus</h3><p class="muted">Itália • Serie A</p></div>
+<div class="card"><h3>🇮🇹 Inter de Milão</h3><p class="muted">Itália • Serie A</p></div>
+<div class="card"><h3>🇧🇷 Flamengo</h3><p class="muted">Brasil • Brasileirão</p></div>
+<div class="card"><h3>🇧🇷 Palmeiras</h3><p class="muted">Brasil • Brasileirão</p></div>
+<div class="card"><h3>🇧🇷 Corinthians</h3><p class="muted">Brasil • Brasileirão</p></div>
+<div class="card"><h3>🇧🇷 São Paulo</h3><p class="muted">Brasil • Brasileirão</p></div>
+</div>
+
+<div class="title" style="margin-top:40px"><h2>⭐ Craques</h2></div>
+<div class="grid">
+<div class="card player"><div class="avatar">🇦🇷</div><div><h3>Lionel Messi</h3><span class="muted">Argentina • Atacante</span></div></div>
+<div class="card player"><div class="avatar">🇵🇹</div><div><h3>Cristiano Ronaldo</h3><span class="muted">Portugal • Atacante</span></div></div>
+<div class="card player"><div class="avatar">🇧🇷</div><div><h3>Pelé</h3><span class="muted">Brasil • Lenda</span></div></div>
+</div>
+</section>
+</main>
+
+<footer>⚽ Futebol Total • Site demonstrativo de futebol</footer>
+</body>
+</html>
